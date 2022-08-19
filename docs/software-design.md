@@ -2,25 +2,27 @@
 
 | Uses              | Technology                  |
 | ----------------- | --------------------------- |
-| VCS               | github                      |
+| VCS               | Github                      |
 | build tool        | Maven                       |
-| Language          | java17                      |
+| Language          | Java17                      |
 | Middleware        | Spring Boot                 |
 | Data Store        | MySQL                       |
 | Testing           | Junit, Mockito, Spring Test |
 | E2E Testing       | ??                          |
-| CI Server         | github action               |
-| VCS               | github                      |
+| CI Server         | Github action               |
 | Containerization  | Docker                      |
-| API documentation | open api                    |
+| API documentation | Open api                    |
 | Event streaming   | Kafka                       |
 
 # Frameworks
 
-- java spring boot
-- spring security
-- spring kafka
-- hibernate
+- Java spring boot
+  - Spring security
+  - Spring kafka
+  - Spring actuator
+  - Spring open api
+  - Spring validation
+- Hibernate
 
 # Components diagram
 
