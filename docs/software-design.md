@@ -26,7 +26,9 @@
 
 # Components diagram
 
-![Components diagram](./asset/components-diagram/main.png)
+> V2 will add Kafka
+
+![Components diagram](./asset/components-diagram/components-diagram-v1.png)
 
 # Data model
 

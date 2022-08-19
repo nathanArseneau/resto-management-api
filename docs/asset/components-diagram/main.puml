@@ -1,8 +1,15 @@
-@startuml
+@startuml components-diagram-v1
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 
-object user
+title Components diagram V1
 
-user : name = "Dummy"
-user : id = 123
+SHOW_PERSON_OUTLINE()
+
+Person(personAlias, "Customer", "A Customer, Admin, Restaurant manager")
+Container(apiApplicationAlias, "API Application", "Spring MVC", "Provides restaurant management functionnality via JSON/REST API")
+ContainerDb(dbAlias, "Database", "MySQL", "Application data store")
+
+Rel(personAlias, apiApplicationAlias, "Uses", "HTTP")
+Rel(apiApplicationAlias, dbAlias, "Read from, writhe to")
 
 @enduml

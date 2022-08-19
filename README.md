@@ -1,4 +1,4 @@
-# Resto Management Api
+# Restaurant Management Api
 
 The goal of this project is to learn.
 
