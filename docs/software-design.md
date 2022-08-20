@@ -32,7 +32,7 @@
 
 # Data model
 
-![Data model](./asset/data-model/main.png)
+![Data model](./asset/data-model/data-model.png)
 
 # API table
 

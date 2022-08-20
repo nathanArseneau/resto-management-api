@@ -1,8 +1,48 @@
-@startuml
+@startuml data-model
+title Data model
 
-object user
+object User
+User : role
+User : email
+User : password
 
-user : name = "Dummy"
-user : id = 123
+object Restaurant
+Restaurant : name
+Restaurant : category
+Restaurant : phoneNumber
+Restaurant : adress
+Restaurant : rating
+Restaurant : approuved
+Restaurant : enabled
+
+object Review
+Review : description
+Review : rating
+
+object Dish
+Dish : name
+Dish : description
+Dish : price
+Dish : category
+
+object DishAvailability
+DishAvailability : enabled
+DishAvailability : enabledStartTime
+DishAvailability : enabledEndTime
+
+object Order
+Order : date
+Order : status
+
+object OrderItem
+
+User --> Restaurant : Many to many
+Review --> Restaurant : Belong to one restaurant
+User --> Review : Has many review
+Restaurant -l-> Dish : Has many Dish
+Dish -l-> DishAvailability : Has multiple availabilities
+Restaurant -r-> Order : Has many order
+User --> Order : Hhas many order
+Order --> OrderItem : Has many Dish
 
 @enduml
