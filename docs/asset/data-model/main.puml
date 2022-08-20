@@ -10,9 +10,9 @@ object Restaurant
 Restaurant : name
 Restaurant : category
 Restaurant : phoneNumber
-Restaurant : adress
+Restaurant : address
 Restaurant : rating
-Restaurant : approuved
+Restaurant : approved
 Restaurant : enabled
 
 object Review
