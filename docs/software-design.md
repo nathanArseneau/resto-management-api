@@ -36,6 +36,12 @@
 
 # API table
 
+<style>
+table, tr, rd {
+    white-space: nowrap;
+}
+</style>
+
 ## Restaurants routes
 
 <table>
