@@ -3,7 +3,7 @@ name: Restaurant Management Api
 on: push
 
 jobs:
-  test:
+  unit-test:
     name: Unit tests
     runs-on: ubuntu-latest
     steps:

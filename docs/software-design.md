@@ -8,7 +8,7 @@
 | Middleware        | Spring Boot                 |
 | Data Store        | MySQL                       |
 | Testing           | Junit, Mockito, Spring Test |
-| E2E Testing       | ??                          |
+| E2E Testing       | Typescript, supertest, jest |
 | CI Server         | Github action               |
 | Containerization  | Docker                      |
 | API documentation | Open api                    |
