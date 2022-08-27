@@ -10,7 +10,7 @@ export async function startDockerCompose(): Promise<void> {
     cwd: path.join(__dirname),
     log: true,
   });
-  await sleep(5000);
+  await sleep(45_000);
 }
 
 export async function stopDockerCompose(): Promise<void> {

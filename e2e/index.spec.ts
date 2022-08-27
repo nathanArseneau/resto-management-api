@@ -1,5 +1,7 @@
 import supertest from "supertest";
+import { loadSqlData } from "./utils/db";
 import { startDockerCompose, stopDockerCompose } from "./utils/docker-setup";
+import path from "path";
 
 jest.setTimeout(900000); // 15 min
 
@@ -7,6 +9,7 @@ const request = supertest("http://localhost:8080");
 
 beforeAll(async () => {
   await startDockerCompose();
+  await loadSqlData(path.join(process.cwd(), "/e2e/restaurant.sql"));
 });
 
 afterAll(async () => {
