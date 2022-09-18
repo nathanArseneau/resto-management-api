@@ -6,6 +6,8 @@ function sleep(duration: number): Promise<void> {
 }
 
 export async function startDockerCompose(): Promise<void> {
+  if (!process.env.CI) return;
+
   await compose.upAll({
     cwd: path.join(__dirname),
     log: true,
@@ -14,6 +16,8 @@ export async function startDockerCompose(): Promise<void> {
 }
 
 export async function stopDockerCompose(): Promise<void> {
+  if (!process.env.CI) return;
+
   await sleep(5000);
   await compose.down();
 }

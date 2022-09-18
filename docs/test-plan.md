@@ -4,6 +4,7 @@
 | ------------------------------------------------------------------------------------------ |
 | should create a new restaurant                                                             |
 | should not create a restaurant if name is empty                                            |
+| should not create a restaurant if phone umber is empty                                     |
 | should not create a restaurant if phone number doesn't respect the format +1xxxxxxxxxx     |
 | should not create a restaurant if the category is not provided                             |
 | should not create a restaurant if the category is not part of the available categories     |
